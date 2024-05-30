@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Pizza Lists</title>
+        <title>Laravel</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -69,6 +69,12 @@
                 <div class="title m-b-md">
                     Pizza List
                 </div>
+                <p>{{ $type }} - {{ $base }} - £{{ $price }}</p>
+
+                @for($i = 0; $i < 5; $i++)
+                    <p>This i value is {{ $i }}</p>
+                @endfor
+
             </div>
         </div>
     </body>
